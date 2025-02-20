@@ -49,22 +49,27 @@
   "exports": {
     ".": {
       "types": "./src/index.d.ts",
+      "browser": "./dist/src/index.browser.js",
       "import": "./dist/src/index.js"
     },
     "./ciphers": {
       "types": "./dist/src/ciphers/index.d.ts",
+      "browser": "./dist/src/ciphers/index.browser.js",
       "import": "./dist/src/ciphers/index.js"
     },
     "./hmac": {
       "types": "./dist/src/hmac/index.d.ts",
+      "browser": "./dist/src/hmac/index.browser.js",
       "import": "./dist/src/hmac/index.js"
     },
     "./keys": {
       "types": "./dist/src/keys/index.d.ts",
+      "browser": "./dist/src/keys/index.browser.js",
       "import": "./dist/src/keys/index.js"
     },
     "./webcrypto": {
       "types": "./dist/src/webcrypto/index.d.ts",
+      "browser": "./dist/src/webcrypto/index.browser.js",
       "import": "./dist/src/webcrypto/index.js"
     }
   },

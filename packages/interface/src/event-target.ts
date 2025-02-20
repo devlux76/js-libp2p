@@ -1,4 +1,4 @@
-import { setMaxListeners } from './events.js'
+import { setMaxListeners } from './events.browser.js'
 
 export interface EventCallback<EventType> { (evt: EventType): void }
 export interface EventObject<EventType> { handleEvent: EventCallback<EventType> }

@@ -3,12 +3,12 @@ export default {
   build: {
     bundlesizeMax: '18kB',
     config: {
-      esbuild: {
-        target: 'esnext',
-        format: 'esm',
-        minify: true,
-        platform: 'browser'
-      }
+      target: 'esnext',
+      format: 'esm',
+      minify: true,
+      platform: 'browser',
+      entryPoints: ['./src/index.ts'],
+      outfile: './dist/src/index.js'
     }
   }
 }

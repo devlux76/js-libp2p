@@ -12,6 +12,7 @@
     "url": "https://github.com/libp2p/js-libp2p/issues"
   },
   "private": true,
+  "type": "module",
   "scripts": {
     "reset": "aegir run clean && aegir clean packages/*/node_modules node_modules package-lock.json packages/*/package-lock.json",
     "test": "aegir run test:browser",
