@@ -1,11 +1,14 @@
-/** @type {import('aegir').PartialOptions} */
+/** @type {import('aegir/types').PartialOptions} */
 export default {
   build: {
-    bundlesizeMax: '95KB'
-  },
-  dependencyCheck: {
-    ignore: [
-      'react-native'
-    ]
+    bundlesizeMax: '18kB',
+    config: {
+      esbuild: {
+        target: 'esnext',
+        format: 'esm',
+        minify: true,
+        platform: 'browser'
+      }
+    }
   }
 }
